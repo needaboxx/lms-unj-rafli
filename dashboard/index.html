@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/UNJ.ico" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>LMS UNJ</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <img src="../assets/UNJ.png" alt="UNJ" class="brand" />
+      <ul class="side-menu">
+        <li>
+          <a href="#"><i class="bx bxs-home icon"></i> Home</a>
+        </li>
+        <li>
+          <a href="#" class="active"
+            ><i class="bx bxs-dashboard icon"></i> Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="../my-courses/index.html"
+            ><i class="bx bxs-book-reader icon"></i> My Courses</a
+          >
+        </li>
+        <li>
+          <a href="../all-courses/index.html"
+            ><i class="bx bxs-book icon"></i> All Courses</a
+          >
+        </li>
+        <li>
+          <a href="../calendar/"
+            ><i class="bx bxs-calendar icon"></i> Calendar</a
+          >
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu toggle-sidebar"></i>
+        <form action="#">
+          <div class="form-group">
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-search icon"></i>
+          </div>
+        </form>
+        <span class="divider"></span>
+        <div class="profile">
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQH4nsH8FgGvmA/profile-displayphoto-shrink_800_800/0/1622822415694?e=1694649600&v=beta&t=iWGQvaZiyZErm4BvaKKjlTp6Bv9TR4HkRMNwDWwIxYQ"
+            alt=""
+          />
+          <ul class="profile-link">
+            <li>
+              <a href="#"><i class="bx bxs-user-circle icon"></i> Profile</a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-cog"></i> Settings</a>
+            </li>
+            <li>
+              <a onclick="showDialogWithPassingParams()"><i class="bx bxs-log-out-circle"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="title">Dashboard</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li class="divider">/</li>
+          <li><a href="#" class="active">Dashboard</a></li>
+        </ul>
+        <div class="info-data">
+          <div class="card">
+            <div class="head">
+              <div class="content-center">
+                <span id="prev" class="bx bxs-x-circle icon"></span>
+                <div>
+                  <h2>3</h2>
+                  <p>Unsubmitted assignments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              <div class="content-center">
+                <span id="prev" class="bx bxs-bookmark-alt icon"></span>
+                <div>
+                  <h2>5</h2>
+                  <p>Take Courses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              <div class="content-center">
+                <span id="prev" class="bx bxs-hdd icon"></span>
+                <div>
+                  <h2>465 GB / 600 GB</h2>
+                  <p>Private File</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="content-data">
+            <div class="head">
+              <h3>Recently accessed courses</h3>
+            </div>
+            <div class="rows-dashboard">
+              <div class="row">
+                <a href="../detail-course/index.html">
+                  <div class="course">
+                    <img
+                      src="https://sbitzone.com//assets/uploads//course-photo/course-photo-1586291605-sbiz.jpg"
+                      alt="Avatar"
+                      style="width: 100%"
+                    />
+                    <div class="container">
+                      <h4><b>Desain Web</b></h4>
+                      <p>ZE. Ferdi Fauzan Putra</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row">
+                <a href="../detail-course/index.html">
+                  <div class="course">
+                    <img
+                      src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201201224231/Best-Courses-to-Learn-Data-Science.png"
+                      alt="Avatar"
+                      style="width: 100%"
+                    />
+                    <div class="container">
+                      <h4><b>Struktur Data</b></h4>
+                      <p>Hamidillah Ajie</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row">
+                <a href="../detail-course/index.html">
+                  <div class="course">
+                    <img
+                      src="https://www.tangolearn.com/wp-content/uploads/2022/04/learn-operating-systems.jpg"
+                      alt="Avatar"
+                      style="width: 100%"
+                    />
+                    <div class="container">
+                      <h4><b>Sistem Operasi</b></h4>
+                      <p>Ali Idrus</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row">
+                <a href="../detail-course/index.html">
+                  <div class="course">
+                    <img
+                      src="https://www.tangolearn.com/wp-content/uploads/2021/09/best-sql-courses-online.jpg"
+                      alt="Avatar"
+                      style="width: 100%"
+                    />
+                    <div class="container">
+                      <h4><b>Basis Data</b></h4>
+                      <p>Widodo</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content-data">
+            <div class="head">
+              <h3>Timeline</h3>
+            </div>
+            <div class="card">
+              <div class="head">
+                <div>
+                  <h3>UAS Desain Web</h3>
+                  <p>Desain Web</p>
+                </div>
+                <span class="deadline-time">Today, 12:00 pm</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <div>
+                  <h3>Tugas Pertemuan 10</h3>
+                  <p>Struktur Data</p>
+                </div>
+                <span class="deadline-time">Today, 12:00 pm</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <div>
+                  <h3>Laporan Pembuatan Basis Data</h3>
+                  <p>Basis Data</p>
+                </div>
+                <span class="deadline-time">Today, 12:00 pm</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-data">
+            <header>
+              <p class="current-date"></p>
+              <div class="icons">
+                <span id="prev" class="bx bxs-left-arrow icon"></span>
+                <span id="next" class="bx bxs-right-arrow icon"></span>
+              </div>
+            </header>
+            <div class="calendar">
+              <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="days"></ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

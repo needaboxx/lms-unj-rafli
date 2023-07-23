@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/UNJ.ico">
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>LMS UNJ</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <img src="../assets/UNJ.png" alt="UNJ" class="brand">
+      <ul class="side-menu">
+        <li>
+          <a href="#"><i class="bx bxs-home icon"></i> Home</a>
+        </li>
+        <li>
+          <a href="../dashboard/index.html"
+            ><i class="bx bxs-dashboard icon"></i> Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="../my-courses/index.html"
+            ><i class="bx bxs-book-reader icon"></i> My Courses</a
+          >
+        </li>
+        <li>
+          <a href="../all-courses/index.html"
+            ><i class="bx bxs-book icon"></i> All Courses</a
+          >
+        </li>
+        <li>
+          <a href="../calendar/index.html"
+            ><i class="bx bxs-calendar icon"></i> Calendar</a
+          >
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu toggle-sidebar"></i>
+        <form action="#">
+          <div class="form-group">
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-search icon"></i>
+          </div>
+        </form>
+        <span class="divider"></span>
+        <div class="profile">
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQH4nsH8FgGvmA/profile-displayphoto-shrink_800_800/0/1622822415694?e=1694649600&v=beta&t=iWGQvaZiyZErm4BvaKKjlTp6Bv9TR4HkRMNwDWwIxYQ"
+            alt=""
+          />
+          <ul class="profile-link">
+            <li>
+              <a href="#"><i class="bx bxs-user-circle icon"></i> Profile</a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-cog"></i> Settings</a>
+            </li>
+            <li>
+              <a onclick="showDialogWithPassingParams()"><i class="bx bxs-log-out-circle"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="title">Basis Data</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li class="divider">/</li>
+          <li><a href="../my-courses/index.html">My Courses</a></li>
+          <li class="divider">/</li>
+          <li><a href="../detail-course/index.html">Basis Data</a></li>
+          <li class="divider">/</li>
+          <li><a href="#" class="active">Soal Ujian Tengah Semester</a></li>
+        </ul>
+        <div class="data">
+          <div class="content-data">
+            <div class="head">
+              <h3>Ujian Tengah Semester</h3>
+            </div>
+            <div class="card">
+              <div class="head">
+                <div class="content-center">
+                  <p>
+                    Silahkan kalian unduh soal Tersebut, dan dijawab dalam
+                    kertas bergaris, jawaban menggunakan tulisan tangan yang
+                    baik, setelah itu jawaban anda di scan/foto dijadikan PDF
+                    dan disubmit dalam sistem LMS sesuai batas waktu yang
+                    ditentukan
+                  </p>
+                </div>
+              </div>
+              <div class="head">
+                <div class="content-center">
+                  <span id="prev" class="bx bxs-file icon"></span>
+                  <div>
+                    <p>Soal Ujian Tengah Semester Basis Data</p>
+                  </div>
+                </div>
+              </div>
+              <div class="button-group">
+                <button class="button">Edit Submission</button>
+                <button class="button">Remove Submission</button>
+              </div>
+            </div>
+          </div>
+          <div class="content-data">
+            <div class="card">
+              <div class="head">
+                <div class="content-center">
+                  <table id="information">
+                    <tr>
+                      <td>Submission status</td>
+                      <td>Submitted for grading</td>
+                    </tr>
+                    <tr>
+                      <td>Grading status</td>
+                      <td>Not graded</td>
+                    </tr>
+                    <tr>
+                      <td>Due Date</td>
+                      <td>Saturday, 29 October 2022, 10:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>Time remaining</td>
+                      <td>Assignment was submitted 1 hour 4 mins early</td>
+                    </tr>
+                    <tr>
+                      <td>Last modified</td>
+                      <td>Saturday, 29 October 2022, 8:55 PM</td>
+                    </tr>
+                    <tr>
+                      <td>File submissions</td>
+                      <td>
+                        <div class="file-submissions">
+                          <span id="prev" class="bx bxs-file icon"></span>
+                          <div>
+                            <p>Tugas Pertemuan 1</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Submission comments</td>
+                      <td>0 Comments</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/UNJ.ico">
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>LMS UNJ</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <img src="../assets/UNJ.png" alt="UNJ" class="brand">
+      <ul class="side-menu">
+        <!-- <li class="divider" data-text="main">Main</li> -->
+        <li>
+          <a href="#"><i class="bx bxs-home icon"></i> Home</a>
+        </li>
+        <li>
+          <a href="../dashboard/index.html"
+            ><i class="bx bxs-dashboard icon"></i> Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="../my-courses/index.html"><i class="bx bxs-book-reader icon"></i> My Courses</a>
+        </li>
+        <li>
+          <a href="#" class="active"><i class="bx bxs-book icon"></i> All Courses</a>
+        </li>
+        <li>
+          <a href="../calendar/index.html"><i class="bx bxs-calendar icon"></i> Calendar</a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu toggle-sidebar"></i>
+        <form action="#">
+          <div class="form-group">
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-search icon"></i>
+          </div>
+        </form>
+        <span class="divider"></span>
+        <div class="profile">
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQH4nsH8FgGvmA/profile-displayphoto-shrink_800_800/0/1622822415694?e=1694649600&v=beta&t=iWGQvaZiyZErm4BvaKKjlTp6Bv9TR4HkRMNwDWwIxYQ"
+            alt=""
+          />
+          <ul class="profile-link">
+            <li>
+              <a href="#"><i class="bx bxs-user-circle icon"></i> Profile</a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-cog"></i> Settings</a>
+            </li>
+            <li>
+              <a onclick="showDialogWithPassingParams()"><i class="bx bxs-log-out-circle"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="title">All Courses</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li class="divider">/</li>
+          <li><a href="#" class="active">All Courses</a></li>
+        </ul>
+        <div class="data">
+          <div class="content-data">
+            <div class="rows">
+              <div class="row">
+                <a href="../detail-course/enroll-course.html">
+                  <div class="course">
+                    <img
+                      src="https://thumbs.dreamstime.com/b/online-physics-course-lesson-typographic-header-concept-scientist-explore-electricity-magnetism-light-wave-forces-theoretical-181650786.jpg"
+                      alt="Avatar"
+                      style="width: 100%"
+                    />
+                    <div class="container">
+                      <h4><b>Fisika</b></h4>
+                      <p>Diat Nurhidayat</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row">
+                <a href="../detail-course/enroll-course.html">
+                  <div class="course">
+                    <img
+                      src="https://cdn.laimoon.com/social_icons/category_social_142.png"
+                      alt="Avatar"
+                      style="width: 100%"
+                    />
+                    <div class="container">
+                      <h4><b>Konsep Pemrograman</b></h4>
+                      <p>Erdawaty Kamaruddin</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row">
+                <a href="../detail-course/enroll-course.html">
+                  <div class="course">
+                    <img
+                      src="https://backpanel.kemlu.go.id/PublishingImages/Foto%20Medsos/Penundaan%20Kepulangan/Untitled%20design.jpg"
+                      alt="Avatar"
+                      style="width: 100%"
+                    />
+                    <div class="container">
+                      <h4><b>Bahasa Indonesia</b></h4>
+                      <p>Siti Ansoriyah</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row">
+                <a href="../detail-course/enroll-course.html">
+                  <div class="course">
+                    <img
+                      src="https://i.cbc.ca/1.6338108.1643915795!/fileImage/httpImage/philosophers.jpg"
+                      alt="Avatar"
+                      style="width: 100%"
+                    />
+                    <div class="container">
+                      <h4><b>Filsafat Ilmu</b></h4>
+                      <p>Ivan Hanafi</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="pagination modal-1">
+          <li><a href="#" class="prev">&laquo</a></li>
+          <li><a href="#" class="active">1</a></li>
+          <li> <a href="#">2</a></li>
+          <li> <a href="#">3</a></li>
+          <li> <a href="#">4</a></li>
+          <li> <a href="#">5</a></li>
+          <li> <a href="#">6</a></li>
+          <li> <a href="#">7</a></li>
+          <li> <a href="#">8</a></li>
+          <li> <a href="#">9</a></li>
+          <li><a href="#" class="next">&raquo;</a></li>
+        </ul>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
